@@ -4,4 +4,4 @@ array = [
   {:name => "Will", :type => "none", :product => "oranges"}
 ]
 
-p array.each_with_object(Hash.new(0)) { |h1, h2| h2[h1[:users]] += 1 }
+p array.each_with_object(Hash.new(0)) { |h1, h2| h2[h1[:name]] += 1 }
