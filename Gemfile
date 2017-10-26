@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 ruby '2.3.3'
-
-group :development, :test do
-  gem "rspec"
-end
+gem "rest-client"
+gem 'json'
+gem "rspec"
