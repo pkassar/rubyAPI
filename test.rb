@@ -1,10 +1,7 @@
-students = [ { name: "Mary Jones", test_score: 80, sport: "soccer" },
-             { name: "Bob Kelly", test_score: 95, sport: "basketball" },
-             { name: "Kate Saunders", test_score: 99, sport: "hockey" },
-             { name: "Pete Dunst", test_score: 88, sport: "football" },
-             { name: "Ima Hogg", test_score: 99, sport: "darts" }]
+array = [
+  {:name => "bob", :type => "some", :product => "apples"},
+  {:name => "ted", :type => "other", :product => "apples"},
+  {:name => "Will", :type => "none", :product => "oranges"}
+]
 
-max_score = students.max_by { |h| h[:test_score] }[:test_score]
-star_students = students.select { |h| h[:test_score] == max_score }.map { |h| h[:name] }
-
-puts star_students
+p array.each_with_object(Hash.new(0)) { |h1, h2| h2[h1[:users]] += 1 }

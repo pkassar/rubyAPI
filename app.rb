@@ -22,12 +22,21 @@ def average(id)
   p total_spend(id)/list_prices(id).count
 end
 
-# total_spend('9PLH-PC2J-7620-L6ZP')
-# average('9PLH-PC2J-7620-L6ZP')
+# def most_loyal
+#   @data['data'].count { |user| user['spend'] == "75.21" }
+# end
 
-def most_loyal
-  p @data['data'].max_by { |user| user['spend'] }
-end
+# def test
+#   @data['data'].each do |user|
+#     puts list_prices(|user|).count
+#   end
+# end
 
+# p @data['data'].each_with_object(Hash.new(0)) { |h1, h2| h2[h1[:user_id]] += 1 }
 
-most_loyal
+p @data['data']
+
+# ary = [1,2,3,4,5]
+# ary.each do |i|
+#    puts i
+# end
