@@ -1,7 +1,7 @@
 require 'rest-client'
 require 'json'
 
-url = 'https://driftrock-dev-test-2.herokuapp.com/purchases?per_page=500000&page=1'
+url = 'https://driftrock-dev-test-2.herokuapp.com/purchases?per_page=50000&page=1'
 response = RestClient.get(url)
 @data = JSON.parse(response)
 
@@ -14,12 +14,12 @@ def list_prices(id)
   user_transactions(id).map{ |user| user['spend'].to_f }
 end
 
-def total_spent(id)
+def total_spend(id)
   p list_prices(id).inject(0) {|sum, i| sum + i}
 end
 
-def average(id)
-  p total_spent(id)/list_prices(id).count
+def average_spend(id)
+  p total_spend(id)/list_prices(id).count
 end
 
 def counting_transactions_by(arg)
@@ -34,5 +34,5 @@ def most_sold
   p counting_transactions_by("item").max_by{ |k,v| v}.first
 end
 
-most_sold
-most_loyal
+p most_sold
+p most_loyal
