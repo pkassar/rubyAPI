@@ -1,0 +1,37 @@
+{"data":[
+{"user_id":"1",
+  "item":"shoe",
+  "spend":"27.78"
+},
+{"user_id":"3",
+  "item":"pants",
+  "spend":"54.5"
+},
+{"user_id":"2",
+  "item":"pants",
+  "spend":"54.5"
+},
+{"user_id":"4",
+  "item":"watch",
+  "spend":"31.21"
+},
+{"user_id":"3",
+  "item":"bike",
+  "spend":"23.21"
+},
+{"user_id":"2",
+  "item":"rock",
+  "spend":"2.11"
+},
+{"user_id":"1",
+  "item":"car",
+  "spend":"41.21"
+},
+{"user_id":"3",
+  "item":"house",
+  "spend":"113.21"
+},
+{"user_id":"4",
+  "item":"sock",
+  "spend":"5.23"
+}]}

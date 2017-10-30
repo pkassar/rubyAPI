@@ -20,7 +20,7 @@ class Purchases
   end
 
   def total_spend(id)
-    list_prices(id).inject(0) {|sum, i| sum + i}
+    list_prices(id).inject(0) {|sum, i| sum + i}.round(2)
   end
 
   def average_spend(id)
