@@ -5,9 +5,9 @@ require_relative 'purchases.rb'
 class App
   attr_reader :users, :purchases
 
-  def initialize
-    @purchases = Purchases.new
-    @users = Users.new
+  def initialize(users = Users.new, purchases = Purchases.new)
+    @purchases = purchases
+    @users = users
   end
 
   def total_spend(email)
@@ -26,6 +26,6 @@ class App
   end
 
   def most_sold
-    id = @purchases.most_sold
+    @purchases.most_sold
   end
 end

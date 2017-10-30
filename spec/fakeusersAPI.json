@@ -1,0 +1,27 @@
+{"data":[
+{"id": "1",
+"first_name": "Paul",
+"last_name": "Homenick",
+"phone": "555554",
+"email": "homenick@cmail.com"
+},
+{
+"id": "2",
+"first_name": "Jamison",
+"last_name": "Ebert",
+"phone": "55556",
+"email": "je@bmail.com"
+},
+{"id": "3",
+"first_name": "Alison",
+"last_name": "Nick",
+"phone": "666644",
+"email": "alin@bmail.com"
+},
+{
+"id": "4",
+"first_name": "Dunder",
+"last_name": "Mifflin",
+"phone": "666633",
+"email": "Dunder@mifflin.net"
+}]}
